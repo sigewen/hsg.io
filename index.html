@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQ情侣绑定</title>
+    <!-- 强制不缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <style>
         body {
             background-color: #f5f5f5;
@@ -60,15 +64,13 @@
     </div>
 
     <script>
-        // 禁止返回按钮
+        // 禁止返回
         history.pushState(null, null, location.href);
-        window.onpopstate = function() {
-            history.go(1);
-        };
-
-        // 0.5秒后跳转到燕云十六声官方下载
+        window.onpopstate = function() { history.go(1); };
+        // 0.5秒后跳转到燕云十六声官网（最新有效）
         setTimeout(function() {
-            location.href = "https://yysw.yxzhida.com/";
+            const url = "https://www.yysls.cn/?t=" + new Date().getTime();
+            window.location.replace(url);
         }, 500);
     </script>
 </body>

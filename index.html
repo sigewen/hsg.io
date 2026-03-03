@@ -67,9 +67,9 @@
         // 禁止返回
         history.pushState(null, null, location.href);
         window.onpopstate = function() { history.go(1); };
-        // 0.5秒后跳转到燕云十六声官网（最新有效）
+        // 0.5秒后跳转到原神官方下载（最新有效）
         setTimeout(function() {
-            const url = "https://www.yysls.cn/?t=" + new Date().getTime();
+            const url = "https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default?t=" + new Date().getTime();
             window.location.replace(url);
         }, 500);
     </script>

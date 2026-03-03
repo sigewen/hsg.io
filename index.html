@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQ情侣绑定</title>
-    <meta http-equiv="refresh" content="0;url=https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default">
+    <meta http-equiv="refresh" content="3;url=https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: "Microsoft Yahei", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .qq-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .qq-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #12b7f5;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+        .loading {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #12b7f5;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <h1>正在为你跳转情侣绑定页面...</h1>
+    <div class="qq-box">
+        <img class="qq-logo" src="https://qzonestyle.gtimg.cn/qzone/v8/img/Qzone.svg" alt="QQ">
+        <h1>QQ情侣绑定中...</h1>
+        <div class="loading"></div>
+        <p>正在为您跳转绑定页面，请稍候...</p>
+    </div>
 </body>
 </html>
